@@ -9,7 +9,7 @@ package Rex::IO::Confd::Schema;
 use strict;
 use warnings;
 
-our $VERSION = 1;
+our $VERSION = 2;
 
 use base qw(DBIx::Class::Schema);
 __PACKAGE__->load_namespaces;

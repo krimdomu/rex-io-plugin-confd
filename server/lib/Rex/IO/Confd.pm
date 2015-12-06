@@ -95,6 +95,12 @@ sub startup {
         auth => 0,
         location => "$me/api/v1/:db/:collection/*key",
       },
+      {
+        url => "/:db/:collection/*key",
+        meth => "PUT",
+        auth => 0,
+        location => "$me/api/v1/:db/:collection/*key",
+      },
     ],
   };
   

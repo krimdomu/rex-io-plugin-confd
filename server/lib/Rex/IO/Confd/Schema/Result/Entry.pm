@@ -24,6 +24,36 @@ __PACKAGE__->add_columns(
         data_type   => 'varchar',
         size        => 5000,
     },
+    ttl => {
+        data_type   => 'integer',
+        is_numeric  => 1,
+        default     => 0,
+        is_nullable => 1,
+    },
+    created => {
+        data_type   => 'integer',
+        is_numeric  => 1,
+        default     => 0,
+        is_nullable => 1,
+    },
+    check_url => {
+        data_type   => 'varchar',
+        is_numeric  => 0,
+        default     => "",
+        is_nullable => 1,
+    },
+    check_freq => {
+        data_type   => 'integer',
+        is_numeric  => 1,
+        default     => 3,
+        is_nullable => 1,
+    },
+    check_flap => {
+        data_type   => 'integer',
+        is_numeric  => 1,
+        default     => 5,
+        is_nullable => 1,
+    },
 );
 
 __PACKAGE__->set_primary_key("id");
